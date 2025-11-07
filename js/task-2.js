@@ -1,8 +1,8 @@
-function formatMessage(message, maxLenght) {
+function formatMessage(message, maxLength) {
         //dize uzunluk kontrol
-    if(message.lenght > maxLenght){
+    if(message.length > maxLength){
         //dize uzun ise
-        return message.slice(0, maxLenght) + "..." ;
+        return message.slice(0, maxLength) + "..." ;
     }
     else{
         //uzunluk yeterli ise
@@ -17,3 +17,4 @@ console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum
 console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
